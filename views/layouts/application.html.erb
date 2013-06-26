@@ -13,7 +13,14 @@
     </div>
     <hr />
     <div>
+      <form method='post' action="<%= @request.path %>">
+        First name: <input type="text" name="first_name" placeholder='first name'/><br/>
+        <input type="submit" calue="Submit" />
+      </form>
+    </div>
+    <div>
       <h3> I'm a footer</h3>
+      <%= @request.query.inspect %>
       <p>Put things in the footer</p>
     </div>
   </body>
